@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "basicform.css">
+</head>
+<body>
+    <main>
+    <form action = "#">
+        <section class="intro">
+            <h1 class="title">Student Registeration Form</h1>
+        </section>
+        <section class="Registeration">
+           
+            <div class="form-input">
+            <label>Enter your name </label><br/><br/>
+            <input type = "text" name = "Username" size = 36 maxlength="36" placeholder = "User name" required>
+            <span>!</span>
+                    <p class="warning">Name cannot be empty</p>
+        </div>
+        <div class="form-input">
+            <label>Enter your Company </label><br/><br/>
+            <input type = "text" name = "Company" size = 36 maxlength="36" placeholder = "Company" required>
+            <span>!</span>
+                    <p class="warning">Company name cannot be empty</p><br/><br/>
+        </div>
+        <div class="form-input">
+            <label>Enter your Department </label><br/><br/>
+            <input type = "text" name = "Dept" size = 36 maxlength="36" placeholder = "Department" required>
+            <span>!
+                    <p class="warning">Department name cannot be empty</p>
+                    </span><br/><br/>
+        </div>
+        <div class="form-input">
+            <label>About Yourself</label><br/><br/>
+             <textarea name = "desciption" rows = "10" cols = "30" required></textarea><br/><br/>
+            </div>
+            <div class="form-input">
+             <label>Gender</label><br/>
+            <input type = "radio" name = "gender" value = "1" > Male <br/>
+            <input type = "radio" name = "gender" value = "0" > Female <br/>
+            <span>!</span>
+                    <p class="warning">Select any one</p>
+        </div>
+        <div class="form-input">
+            <p>
+                <label>Select your favorite subjects</label> <br/>
+                <input type = "checkbox" name = "Books" value="Books" > Books <br/>
+                <input type = "checkbox" name = "Web" value="Web"> Web <br/>
+                <input type = "checkbox" name = "PF" value="PF"> Programming Fundamentals <br/>
+                <input type = "checkbox" name = "OOP" value="OOP"> Object Oriented Programmin <br/>
+                <input type = "checkbox" name = "CN" value="CN"> Computer Network <br/>
+            </p>
+        </div>
+        <div class="form-input">
+            <label>Select your City</label>
+            <select name = "City" required>
+                <option value = "1" selected = "true">Islamabad</option>
+                <option value = "2" >Rawalpindi</option>
+                <option value = "3" >Lahore</option>
+                <option value = "4" >Karachi</option>
+            </select> 
+    <br/><br/>
+</div>
+<div class="form-input">
+        <input class="submit-btn" type="submit" value="Submit">
+    </div>
+</section>
+    </form>
+</main>
+</body>
+</html>
